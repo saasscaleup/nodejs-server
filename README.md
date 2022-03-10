@@ -16,7 +16,7 @@ wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 
 Running either of the above commands downloads a script and runs it. The script clones the nvm repository to `~/.nvm`, and attempts to add the source lines from the snippet below to the correct profile file (`~/.bash_profile`, `~/.zshrc`, `~/.profile`, or `~/.bashrc`).
 
-### 2. Copy past (each line separately)
+### 2. Copy & Past (each line separately)
 <a id="profile_snippet"></a>
 ```sh
 export NVM_DIR="$HOME/.nvm"
@@ -24,7 +24,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 ```
 
-### 3. verify that nvm has been installed
+### 3. Verify that nvm has been installed
 
 ```sh
 nvm --version
