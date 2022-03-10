@@ -68,14 +68,13 @@ nano app.js
 ```
 const http = require('http');
 
-const hostname = '127.0.0.1'; // your server Ip address
+const hostname = '127.0.0.1'; // Your server ip address
 const port = 3000;
 
 const server = http.createServer((req, res) => {
 
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/html');
-  
   
   if (req.url == '/') { //check the URL of the current request
         
@@ -95,10 +94,12 @@ const server = http.createServer((req, res) => {
         res.end('Page Not Found');
   }
 
-  console.log(`Server running at http://${hostname}:${port}/`);
+  console.log(`New request => http://${hostname}:${port}`+req.url);
 });
 
-server.listen(port, '0.0.0.0');
+server.listen(port, '0.0.0.0', () =>{
+  console.log(`Server running at http://${hostname}:${port}/`);
+});
 
 ```
 
