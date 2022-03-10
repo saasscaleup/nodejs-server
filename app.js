@@ -1,13 +1,12 @@
 const http = require('http');
 
-const hostname = '44.199.112.112';
+const hostname = '127.0.0.1'; // Your server ip address
 const port = 3000;
 
 const server = http.createServer((req, res) => {
 
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/html');
-  
   
   if (req.url == '/') { //check the URL of the current request
         
@@ -22,12 +21,12 @@ const server = http.createServer((req, res) => {
         res.end();
 
   }else{
-                // set Invalid response content
-                res.statusCode = 401;
-                res.end('Page Not Found');
+        // set Invalid response content
+        res.statusCode = 401;
+        res.end('Page Not Found');
   }
 
-  console.log(`New request http://${hostname}:${port}`+req.url);
+  console.log(`New request => http://${hostname}:${port}`+req.url);
 });
 
 server.listen(port, '0.0.0.0', () =>{
