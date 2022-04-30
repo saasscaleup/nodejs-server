@@ -2,6 +2,9 @@
 
 How to set nodejs server on ubuntu 20.04
 
+You can watch the youtube video too:
+https://www.youtube.com/watch?v=bju1c1CDEZk
+
 ## Installation instructions
 
 ### 1. Choose one of the options
