@@ -4,7 +4,7 @@ How to set nodejs server on ubuntu 20.04
 
 ## Installation instructions
 
-### 1. Choose on of the options
+### 1. Choose one of the options
 To **install** or **update** nvm, you should run the [install script][2]. To do that, you may either download and run the script manually, or use the following cURL or Wget command:
 ```sh
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
